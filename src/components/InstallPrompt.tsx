@@ -16,7 +16,7 @@ export function InstallPrompt() {
   const [isIOS, setIsIOS] = useState(false);
 
   useEffect(() => {
-    if (window.matchMedia("(display-mode: standalone)").matches) {
+    if (window.matchMedia("(display-mode: standalone)").matches || (navigator as any).standalone) {
       setIsInstalled(true);
       return;
     }
@@ -35,7 +35,14 @@ export function InstallPrompt() {
       setDeferredPrompt(e as BeforeInstallPromptEvent);
     };
     window.addEventListener("beforeinstallprompt", handler);
-    return () => window.removeEventListener("beforeinstallprompt", handler);
+
+    const installedHandler = () => setIsInstalled(true);
+    window.addEventListener("appinstalled", installedHandler);
+
+    return () => {
+      window.removeEventListener("beforeinstallprompt", handler);
+      window.removeEventListener("appinstalled", installedHandler);
+    };
   }, []);
 
   const handleInstall = async () => {
