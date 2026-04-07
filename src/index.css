@@ -8,80 +8,81 @@
 @layer base {
   :root {
     /* ═══════════════════════════════════════════
-       HELM PREMIUM DESIGN SYSTEM v3.0
-       Brand DNA: Trust · Vitality · Joy · Growth
+       HELM BRAND DESIGN SYSTEM v4.0
+       Brand DNA: حلم — ابنى بطل أولمبي
+       Colors: Royal Blue + Champion Red
        ═══════════════════════════════════════════ */
 
     /* ── Core Palette ── */
-    --background: 150 20% 98%;
-    --foreground: 200 35% 10%;
+    --background: 216 30% 98%;
+    --foreground: 216 40% 10%;
 
     --card: 0 0% 100%;
-    --card-foreground: 200 35% 10%;
+    --card-foreground: 216 40% 10%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 200 35% 10%;
+    --popover-foreground: 216 40% 10%;
 
-    /* Primary: Deep Emerald — trust, growth, vitality */
-    --primary: 160 60% 36%;
+    /* Primary: Royal Blue — trust, ambition, excellence */
+    --primary: 211 76% 40%;
     --primary-foreground: 0 0% 100%;
 
-    /* Secondary: Warm Amber — energy, joy, action */
-    --secondary: 38 95% 54%;
+    /* Secondary: Champion Red — passion, energy, victory */
+    --secondary: 4 72% 50%;
     --secondary-foreground: 0 0% 100%;
 
-    /* Accent: Ocean Blue — clarity, focus, intelligence */
-    --accent: 215 82% 52%;
+    /* Accent: Deep Blue — depth, intelligence, focus */
+    --accent: 215 85% 55%;
     --accent-foreground: 0 0% 100%;
 
-    --muted: 150 14% 93%;
-    --muted-foreground: 200 14% 46%;
+    --muted: 216 18% 93%;
+    --muted-foreground: 216 14% 46%;
 
     --destructive: 0 78% 56%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 150 16% 88%;
-    --input: 150 16% 88%;
-    --ring: 160 60% 36%;
+    --border: 216 18% 88%;
+    --input: 216 18% 88%;
+    --ring: 211 76% 40%;
 
     --radius: 0.875rem;
 
     /* ── Sidebar ── */
-    --sidebar-background: 150 18% 97%;
-    --sidebar-foreground: 200 35% 10%;
-    --sidebar-primary: 160 60% 36%;
+    --sidebar-background: 216 22% 97%;
+    --sidebar-foreground: 216 40% 10%;
+    --sidebar-primary: 211 76% 40%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 150 14% 93%;
-    --sidebar-accent-foreground: 200 35% 10%;
-    --sidebar-border: 150 16% 88%;
-    --sidebar-ring: 160 60% 36%;
+    --sidebar-accent: 216 18% 93%;
+    --sidebar-accent-foreground: 216 40% 10%;
+    --sidebar-border: 216 18% 88%;
+    --sidebar-ring: 211 76% 40%;
 
     /* ── Semantic Status ── */
-    --success: 160 60% 36%;
+    --success: 152 60% 40%;
     --warning: 38 95% 54%;
-    --info: 215 82% 52%;
+    --info: 211 76% 40%;
 
     /* ── Premium Gradient System ── */
-    --gradient-primary: linear-gradient(135deg, hsl(160 60% 36%) 0%, hsl(174 52% 42%) 50%, hsl(188 48% 44%) 100%);
-    --gradient-secondary: linear-gradient(135deg, hsl(38 95% 54%) 0%, hsl(44 90% 58%) 50%, hsl(50 86% 60%) 100%);
-    --gradient-hero: linear-gradient(145deg, hsl(160 60% 32%) 0%, hsl(182 50% 38%) 40%, hsl(215 82% 46%) 100%);
+    --gradient-primary: linear-gradient(135deg, hsl(211 76% 40%) 0%, hsl(215 85% 55%) 50%, hsl(220 80% 58%) 100%);
+    --gradient-secondary: linear-gradient(135deg, hsl(4 72% 50%) 0%, hsl(8 68% 55%) 50%, hsl(12 65% 58%) 100%);
+    --gradient-hero: linear-gradient(145deg, hsl(211 76% 22%) 0%, hsl(215 80% 30%) 40%, hsl(220 75% 35%) 100%);
     --gradient-glass: linear-gradient(135deg, hsl(0 0% 100% / 0.95), hsl(0 0% 100% / 0.75));
-    --gradient-mesh: radial-gradient(at 40% 20%, hsl(160 60% 36% / 0.05) 0px, transparent 50%),
-                      radial-gradient(at 80% 0%, hsl(215 82% 52% / 0.04) 0px, transparent 50%),
-                      radial-gradient(at 0% 50%, hsl(38 95% 54% / 0.03) 0px, transparent 50%);
-    --gradient-surface: linear-gradient(180deg, hsl(150 20% 98%) 0%, hsl(150 16% 96%) 100%);
+    --gradient-mesh: radial-gradient(at 40% 20%, hsl(211 76% 40% / 0.04) 0px, transparent 50%),
+                      radial-gradient(at 80% 0%, hsl(4 72% 50% / 0.03) 0px, transparent 50%),
+                      radial-gradient(at 0% 50%, hsl(215 85% 55% / 0.03) 0px, transparent 50%);
+    --gradient-surface: linear-gradient(180deg, hsl(216 30% 98%) 0%, hsl(216 24% 96%) 100%);
 
     /* ── Elevation System ── */
-    --shadow-xs: 0 1px 2px hsl(200 35% 10% / 0.03);
-    --shadow-sm: 0 2px 6px -1px hsl(200 35% 10% / 0.05), 0 1px 3px hsl(200 35% 10% / 0.03);
-    --shadow-md: 0 4px 14px -3px hsl(200 35% 10% / 0.07), 0 2px 5px hsl(200 35% 10% / 0.04);
-    --shadow-lg: 0 10px 28px -6px hsl(200 35% 10% / 0.09), 0 4px 10px hsl(200 35% 10% / 0.04);
-    --shadow-xl: 0 18px 44px -10px hsl(200 35% 10% / 0.12), 0 8px 18px hsl(200 35% 10% / 0.06);
-    --shadow-2xl: 0 28px 60px -14px hsl(200 35% 10% / 0.16), 0 14px 28px hsl(200 35% 10% / 0.08);
-    --shadow-glow: 0 0 52px -14px hsl(160 60% 36% / 0.30);
-    --shadow-glow-warm: 0 0 52px -14px hsl(38 95% 54% / 0.25);
-    --shadow-inner: inset 0 2px 4px hsl(200 35% 10% / 0.05);
-    --shadow-card-hover: 0 14px 36px -8px hsl(160 60% 36% / 0.12), 0 6px 14px hsl(200 35% 10% / 0.05);
+    --shadow-xs: 0 1px 2px hsl(216 40% 10% / 0.03);
+    --shadow-sm: 0 2px 6px -1px hsl(216 40% 10% / 0.05), 0 1px 3px hsl(216 40% 10% / 0.03);
+    --shadow-md: 0 4px 14px -3px hsl(216 40% 10% / 0.07), 0 2px 5px hsl(216 40% 10% / 0.04);
+    --shadow-lg: 0 10px 28px -6px hsl(216 40% 10% / 0.09), 0 4px 10px hsl(216 40% 10% / 0.04);
+    --shadow-xl: 0 18px 44px -10px hsl(216 40% 10% / 0.12), 0 8px 18px hsl(216 40% 10% / 0.06);
+    --shadow-2xl: 0 28px 60px -14px hsl(216 40% 10% / 0.16), 0 14px 28px hsl(216 40% 10% / 0.08);
+    --shadow-glow: 0 0 52px -14px hsl(211 76% 40% / 0.35);
+    --shadow-glow-warm: 0 0 52px -14px hsl(4 72% 50% / 0.25);
+    --shadow-inner: inset 0 2px 4px hsl(216 40% 10% / 0.05);
+    --shadow-card-hover: 0 14px 36px -8px hsl(211 76% 40% / 0.14), 0 6px 14px hsl(216 40% 10% / 0.05);
 
     /* ── Motion Tokens ── */
     --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
@@ -100,35 +101,35 @@
   }
 
   .dark {
-    --background: 200 28% 7%;
-    --foreground: 150 18% 95%;
-    --card: 200 24% 10%;
-    --card-foreground: 150 18% 95%;
-    --popover: 200 24% 10%;
-    --popover-foreground: 150 18% 95%;
-    --primary: 160 56% 46%;
+    --background: 216 32% 7%;
+    --foreground: 216 18% 95%;
+    --card: 216 28% 10%;
+    --card-foreground: 216 18% 95%;
+    --popover: 216 28% 10%;
+    --popover-foreground: 216 18% 95%;
+    --primary: 211 72% 52%;
     --primary-foreground: 0 0% 100%;
-    --secondary: 38 95% 54%;
+    --secondary: 4 72% 55%;
     --secondary-foreground: 0 0% 100%;
-    --muted: 200 18% 15%;
-    --muted-foreground: 200 12% 55%;
-    --accent: 215 78% 55%;
+    --muted: 216 20% 15%;
+    --muted-foreground: 216 12% 55%;
+    --accent: 215 78% 58%;
     --accent-foreground: 0 0% 100%;
     --destructive: 0 65% 38%;
     --destructive-foreground: 0 0% 100%;
-    --border: 200 18% 17%;
-    --input: 200 18% 17%;
-    --ring: 160 56% 46%;
-    --sidebar-background: 200 28% 8%;
-    --sidebar-foreground: 150 18% 95%;
-    --sidebar-primary: 160 56% 46%;
+    --border: 216 20% 17%;
+    --input: 216 20% 17%;
+    --ring: 211 72% 52%;
+    --sidebar-background: 216 32% 8%;
+    --sidebar-foreground: 216 18% 95%;
+    --sidebar-primary: 211 72% 52%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 200 18% 15%;
-    --sidebar-accent-foreground: 150 18% 95%;
-    --sidebar-border: 200 18% 17%;
-    --sidebar-ring: 160 56% 46%;
-    --gradient-glass: linear-gradient(135deg, hsl(200 24% 10% / 0.95), hsl(200 24% 10% / 0.75));
-    --gradient-surface: linear-gradient(180deg, hsl(200 28% 9%) 0%, hsl(200 24% 11%) 100%);
+    --sidebar-accent: 216 20% 15%;
+    --sidebar-accent-foreground: 216 18% 95%;
+    --sidebar-border: 216 20% 17%;
+    --sidebar-ring: 211 72% 52%;
+    --gradient-glass: linear-gradient(135deg, hsl(216 28% 10% / 0.95), hsl(216 28% 10% / 0.75));
+    --gradient-surface: linear-gradient(180deg, hsl(216 32% 9%) 0%, hsl(216 28% 11%) 100%);
   }
 }
 
@@ -183,7 +184,7 @@
   }
 
   ::selection {
-    background: hsl(160 60% 36% / 0.15);
+    background: hsl(211 76% 40% / 0.15);
     color: hsl(var(--foreground));
   }
 }
@@ -321,6 +322,11 @@
   .animate-blur-in { animation: blurIn var(--duration-slower) var(--ease-out-expo) both; }
   .animate-counter { animation: countPulse 0.4s var(--ease-out-back); }
   .animate-pulse-soft { animation: pulseSoft 3s ease-in-out infinite; }
+  .animate-shimmer { animation: shimmer 2.5s ease-in-out infinite; }
+  .animate-glow-pulse { animation: glowPulse 3s ease-in-out infinite; }
+  .animate-bounce-gentle { animation: bounceGentle 2s ease-in-out infinite; }
+  .animate-rotate-slow { animation: rotateSlow 20s linear infinite; }
+  .animate-wave { animation: wave 2.5s ease-in-out infinite; }
 
   .stagger-1 { animation-delay: 80ms; }
   .stagger-2 { animation-delay: 160ms; }
@@ -380,8 +386,16 @@
     border-radius: 2px;
     background: var(--gradient-primary);
   }
+  
+  .line-accent-red {
+    width: 48px;
+    height: 3px;
+    border-radius: 2px;
+    background: var(--gradient-secondary);
+  }
 }
 
+/* ── Keyframes ── */
 @keyframes float {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-14px); }
@@ -426,6 +440,47 @@
 @keyframes skeleton-shimmer {
   0% { background-position: 200% 0; }
   100% { background-position: -200% 0; }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+@keyframes glowPulse {
+  0%, 100% { box-shadow: 0 0 20px hsl(211 76% 40% / 0.15); }
+  50% { box-shadow: 0 0 40px hsl(211 76% 40% / 0.35), 0 0 80px hsl(211 76% 40% / 0.1); }
+}
+
+@keyframes bounceGentle {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes rotateSlow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes wave {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(12deg); }
+  75% { transform: rotate(-12deg); }
+}
+
+@keyframes ripple {
+  0% { transform: scale(0.8); opacity: 0.6; }
+  100% { transform: scale(2.4); opacity: 0; }
+}
+
+@keyframes slideInFromRight {
+  from { opacity: 0; transform: translateX(40px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideInFromLeft {
+  from { opacity: 0; transform: translateX(-40px); }
+  to { opacity: 1; transform: translateX(0); }
 }
 
 .reveal-up {
