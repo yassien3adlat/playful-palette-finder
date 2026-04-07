@@ -285,7 +285,7 @@ const Index = () => {
           <div className="flex flex-col gap-3 sm:flex-row sm:gap-4 justify-center animate-slide-up" style={{ animationDelay: '250ms' }}>
             <Button
               onClick={() => navigate("/auth")}
-              size="xl"
+              size="lg"
               className="w-full sm:w-auto gradient-primary text-primary-foreground text-base sm:text-lg px-8 sm:px-12 shadow-[0_0_40px_rgba(46,158,110,0.3)] hover:shadow-[0_0_60px_rgba(46,158,110,0.5)] transition-all hover:scale-[1.03] rounded-2xl press-effect shine-effect group"
             >
               ابدأ الآن مجاناً
@@ -296,7 +296,7 @@ const Index = () => {
                 document.getElementById("features-heading")?.scrollIntoView({ behavior: "smooth" });
               }}
               variant="outline"
-              size="xl"
+              size="lg"
               className="w-full sm:w-auto text-base sm:text-lg rounded-2xl border-white/15 bg-white/[0.06] backdrop-blur-sm hover:bg-white/10 text-white/80 hover:text-white press-effect"
             >
               <Play className="w-4 h-4 ml-2 text-emerald-400" />
@@ -536,7 +536,7 @@ const Index = () => {
             </p>
             <Button
               onClick={() => navigate("/install")}
-              size="xl"
+              size="lg"
               className="gradient-primary text-primary-foreground rounded-2xl press-effect shine-effect shadow-[var(--shadow-md)] hover:shadow-[var(--shadow-glow)] transition-all"
             >
               <ArrowDown className="w-5 h-5 ml-2" />
@@ -571,7 +571,7 @@ const Index = () => {
           </div>
           <Button
             onClick={() => navigate("/auth")}
-            size="xl"
+            size="lg"
             className="bg-card text-primary hover:bg-card/95 text-base sm:text-lg px-10 sm:px-14 shadow-[var(--shadow-2xl)] hover:scale-[1.03] transition-all rounded-2xl font-bold press-effect shine-effect group"
           >
             ابدأ مجاناً الآن
