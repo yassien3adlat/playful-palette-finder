@@ -14,7 +14,163 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      assessment_results: {
+        Row: {
+          answers: Json | null
+          child_id: string
+          completed_at: string
+          id: string
+          recommended_sports: Json | null
+          score: number | null
+          user_id: string
+        }
+        Insert: {
+          answers?: Json | null
+          child_id: string
+          completed_at?: string
+          id?: string
+          recommended_sports?: Json | null
+          score?: number | null
+          user_id: string
+        }
+        Update: {
+          answers?: Json | null
+          child_id?: string
+          completed_at?: string
+          id?: string
+          recommended_sports?: Json | null
+          score?: number | null
+          user_id?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "assessment_results_child_id_fkey"
+            columns: ["child_id"]
+            isOneToOne: false
+            referencedRelation: "children"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      children: {
+        Row: {
+          age: number
+          created_at: string
+          favorite_sport: string | null
+          gender: string | null
+          height_cm: number | null
+          id: string
+          name: string
+          notes: string | null
+          recommended_sport: string | null
+          skill_level: string | null
+          updated_at: string
+          user_id: string
+          weight_kg: number | null
+        }
+        Insert: {
+          age: number
+          created_at?: string
+          favorite_sport?: string | null
+          gender?: string | null
+          height_cm?: number | null
+          id?: string
+          name: string
+          notes?: string | null
+          recommended_sport?: string | null
+          skill_level?: string | null
+          updated_at?: string
+          user_id: string
+          weight_kg?: number | null
+        }
+        Update: {
+          age?: number
+          created_at?: string
+          favorite_sport?: string | null
+          gender?: string | null
+          height_cm?: number | null
+          id?: string
+          name?: string
+          notes?: string | null
+          recommended_sport?: string | null
+          skill_level?: string | null
+          updated_at?: string
+          user_id?: string
+          weight_kg?: number | null
+        }
+        Relationships: []
+      }
+      profiles: {
+        Row: {
+          created_at: string
+          full_name: string | null
+          id: string
+          phone: string | null
+          updated_at: string
+          user_id: string
+        }
+        Insert: {
+          created_at?: string
+          full_name?: string | null
+          id?: string
+          phone?: string | null
+          updated_at?: string
+          user_id: string
+        }
+        Update: {
+          created_at?: string
+          full_name?: string | null
+          id?: string
+          phone?: string | null
+          updated_at?: string
+          user_id?: string
+        }
+        Relationships: []
+      }
+      weekly_progress: {
+        Row: {
+          child_id: string
+          created_at: string
+          hours_practiced: number | null
+          id: string
+          notes: string | null
+          performance_rating: number | null
+          sport: string
+          user_id: string
+          week_start: string
+        }
+        Insert: {
+          child_id: string
+          created_at?: string
+          hours_practiced?: number | null
+          id?: string
+          notes?: string | null
+          performance_rating?: number | null
+          sport: string
+          user_id: string
+          week_start: string
+        }
+        Update: {
+          child_id?: string
+          created_at?: string
+          hours_practiced?: number | null
+          id?: string
+          notes?: string | null
+          performance_rating?: number | null
+          sport?: string
+          user_id?: string
+          week_start?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "weekly_progress_child_id_fkey"
+            columns: ["child_id"]
+            isOneToOne: false
+            referencedRelation: "children"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
     }
     Views: {
       [_ in never]: never
