@@ -100,12 +100,12 @@ export function Layout({ children, hideNav }: LayoutProps) {
         >
           <div className="p-5 border-b border-border/50">
             <button onClick={() => handleNav("/dashboard")} className="flex items-center gap-2.5 press-effect group">
-              <div className="w-10 h-10 rounded-xl overflow-hidden shadow-soft group-hover:shadow-glow transition-shadow">
-                <img src={helmLogo} alt="Helm" className="w-full h-full object-contain" />
+              <div className="w-10 h-10 rounded-xl overflow-hidden shadow-soft group-hover:shadow-glow transition-shadow animate-glow-pulse">
+                <img src={helmLogo} alt="حلم" className="w-full h-full object-contain" />
               </div>
               <div className="text-right">
-                <span className="text-xl font-black text-foreground block leading-none">Helm</span>
-                <span className="text-[9px] text-muted-foreground">اكتشف رياضة طفلك</span>
+                <span className="text-xl font-black text-foreground block leading-none">حلم</span>
+                <span className="text-[9px] text-muted-foreground">ابنى بطل أولمبي</span>
               </div>
             </button>
           </div>
@@ -134,7 +134,7 @@ export function Layout({ children, hideNav }: LayoutProps) {
               </p>
             </div>
             <div className="rounded-xl bg-muted/40 p-3 text-center">
-              <p className="text-[10px] text-muted-foreground">© {new Date().getFullYear()} Helm</p>
+              <p className="text-[10px] text-muted-foreground">© {new Date().getFullYear()} حلم</p>
             </div>
           </div>
         </aside>
